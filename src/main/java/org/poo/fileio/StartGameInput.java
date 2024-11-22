@@ -1,9 +1,14 @@
 package org.poo.fileio;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public final class StartGameInput {
     private static final int TABLE_ROWS = 4;
+    private static final int FRONT_ROW_PLAYER_ONE = 2;
+    private static final int FRONT_ROW_PLAYER_TWO = 1;
+    private static final int BACK_ROW_PLAYER_ONE = 3;
+    private static final int BACK_ROW_PLAYER_TWO = 0;
 
     private int playerOneDeckIdx;
     private int playerTwoDeckIdx;
@@ -11,12 +16,63 @@ public final class StartGameInput {
     private Hero playerOneHero;
     private Hero playerTwoHero;
     private int startingPlayer;
+    private Player playerOne;
+    private Player playerTwo;
     private ArrayList<ArrayList<Cards>> table;
 
     /**
      * Constructor
      */
     public StartGameInput() {
+        playerOne = new Player();
+        playerTwo = new Player();
+    }
+
+    /**
+     * getter for playerOne
+     */
+    public Player getPlayerOne() {
+        return playerOne;
+    }
+
+    /**
+     * getter for playerTwo
+     */
+    public Player getPlayerTwo() {
+        return playerTwo;
+    }
+
+    /**
+     * getter for current player
+     */
+    public Player getCurrentPlayer() {
+        if (getStartingPlayer() == 1) {
+            return playerOne;
+        } else {
+            return playerTwo;
+        }
+    }
+
+    /**
+     * getter for enemy player rows
+     */
+    public ArrayList<Integer> getEnemyRows() {
+        if (getStartingPlayer() == 2) {
+            return new ArrayList<Integer>(List.of(FRONT_ROW_PLAYER_ONE, BACK_ROW_PLAYER_ONE));
+        } else {
+            return new ArrayList<Integer>(List.of(FRONT_ROW_PLAYER_TWO, BACK_ROW_PLAYER_TWO));
+        }
+    }
+
+    /**
+     * getter for player rows
+     */
+    public ArrayList<Integer> getPlayerRows() {
+        if (getStartingPlayer() == 1) {
+            return new ArrayList<Integer>(List.of(FRONT_ROW_PLAYER_ONE, BACK_ROW_PLAYER_ONE));
+        } else {
+            return new ArrayList<Integer>(List.of(FRONT_ROW_PLAYER_TWO, BACK_ROW_PLAYER_TWO));
+        }
     }
 
     /**

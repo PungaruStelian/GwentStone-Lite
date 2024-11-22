@@ -1,61 +1,19 @@
 package org.poo.fileio;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public final class GameInput {
-
-    private static final int FRONT_ROW_PLAYER_ONE = 2;
-    private static final int FRONT_ROW_PLAYER_TWO = 1;
-    private static final int BACK_ROW_PLAYER_ONE = 3;
-    private static final int BACK_ROW_PLAYER_TWO = 0;
 
     private StartGameInput startGame;
     private ArrayList<ActionsInput> actions;
     private static int totalGamesPlayed;
     private static int playerOneWins;
     private static int playerTwoWins;
-    private Player playerOne;
-    private Player playerTwo;
 
-    /**
+     /**
      * Constructor
      */
     public GameInput() {
-        playerOne = new Player();
-        playerTwo = new Player();
-    }
-
-    public ArrayList<Integer> getEnemyRows() {
-        if(startGame.getStartingPlayer() == 2) {
-            return new ArrayList<Integer>(List.of(FRONT_ROW_PLAYER_ONE, BACK_ROW_PLAYER_ONE));
-        } else {
-            return new ArrayList<Integer>(List.of(FRONT_ROW_PLAYER_TWO, BACK_ROW_PLAYER_TWO));
-        }
-    }
-
-    public ArrayList<Integer> getPlayerRows() {
-        if(startGame.getStartingPlayer() == 1) {
-            return new ArrayList<Integer>(List.of(FRONT_ROW_PLAYER_ONE, BACK_ROW_PLAYER_ONE));
-        } else {
-            return new ArrayList<Integer>(List.of(FRONT_ROW_PLAYER_TWO, BACK_ROW_PLAYER_TWO));
-        }
-    }
-
-    public Player getPlayerOne() {
-        return playerOne;
-    }
-
-    public Player getPlayerTwo() {
-        return playerTwo;
-    }
-
-    public Player getCurrentPlayer() {
-        if (startGame.getStartingPlayer() == 1) {
-            return playerOne;
-        } else {
-            return playerTwo;
-        }
     }
 
     /**
