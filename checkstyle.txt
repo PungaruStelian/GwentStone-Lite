@@ -1,5 +1,4 @@
 Starting audit...
-[ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\fileio\CardInput.java:1: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\fileio\Cards.java:97:27: Parameter frozen should be final. [FinalParameters]
 [ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\fileio\Cards.java:121:28: Parameter backrow should be final. [FinalParameters]
 [ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\fileio\Cards.java:137:29: Parameter frontrow should be final. [FinalParameters]
@@ -7,19 +6,8 @@ Starting audit...
 [ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\fileio\ManaBonus.java:25:30: Parameter manaBonus should be final. [FinalParameters]
 [ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\fileio\Player.java:71:30: Parameter amount should be final. [FinalParameters]
 [ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\fileio\Player.java:92:28: Parameter endTurn should be final. [FinalParameters]
-[ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\main\Main.java:78:5: Method action length is 584 lines (max allowed is 150). [MethodLength]
-[ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\main\Main.java:152:53: '3' is a magic number. [MagicNumber]
-[ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\main\Main.java:194: Line is longer than 100 characters (found 104). [LineLength]
-[ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\main\Main.java:413:33: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\main\Main.java:461:31: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\main\Main.java:461:31: '=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\main\Main.java:472:39: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\main\Main.java:472:39: '=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\main\Main.java:477:25: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\main\Main.java:477:25: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\main\Main.java:477:25: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\main\Main.java:528: Line is longer than 100 characters (found 142). [LineLength]
-[ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\main\Main.java:529:33: Name 'EnemyFrontRow' must match pattern '^([a-z][a-zA-Z0-9]*|_)$'. [LocalVariableName]
-[ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\main\Main.java:531:33: Name 'EnemyBackRow' must match pattern '^([a-z][a-zA-Z0-9]*|_)$'. [LocalVariableName]
+[ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\main\Main.java:290:65: Parameter lastError should be final. [FinalParameters]
+[ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\main\Main.java:436:66: Parameter lastError should be final. [FinalParameters]
+[ERROR] C:\Users\punga\Desktop\GwentStone-Lite\.\src\main\java\org\poo\main\Main.java:758:5: Method action length is 153 lines (max allowed is 150). [MethodLength]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 10 errors.

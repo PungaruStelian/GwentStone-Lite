@@ -2,7 +2,7 @@
 
 ## Description
 
-This project implements a card game where two players compete against each other. Each player selects a deck, which is shuffled at the beginning of the game to ensure unpredictability. The game is deterministic, with a seed provided for the shuffling process. Players are assigned heroes randomly, and the starting player is specified in the input.
+This project implements a card game where two players compete against each other. Each player selects a deck, which is shuffled at the beginning of the game to ensure unpredictability. The game is deterministic, with a seed provided for the shuffling process. Players are assigned heroes randomly, and the starting player is specified in the input. The more detailed statement can be found: https://ocw.cs.pub.ro/courses/poo-ca-cd/teme/2024/tema
 
 ## Game Setup
 
